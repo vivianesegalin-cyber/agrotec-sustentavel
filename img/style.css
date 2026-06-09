@@ -1,1 +1,40 @@
+body{
+font-family:Arial,sans-serif;
+background:#e8f5e9;
+margin:0;
+text-align:center;
+}
 
+header{
+background:#2e7d32;
+color:white;
+padding:20px;
+}
+
+.container{
+padding:30px;
+}
+
+.etapa{
+display:none;
+background:white;
+padding:20px;
+border-radius:10px;
+max-width:600px;
+margin:auto;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.ativa{
+display:block;
+}
+
+button{
+margin-top:20px;
+padding:12px 25px;
+background:#43a047;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
