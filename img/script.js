@@ -1,12 +1,19 @@
-// Rolagem suave para as seções ao clicar nos botões
-function scrollToSection(id) {
-    const section = document.getElementById(id);
-    section.scrollIntoView({ behavior: 'smooth' });
-}
+const cards = document.querySelectorAll('.card');
 
-// Pequena interação para clicar nas etapas
-document.querySelectorAll(".etapa").forEach(etapa => {
-    etapa.addEventListener("click", () => {
-        alert(`Você clicou na etapa: ${etapa.querySelector("h3").textContent}`);
-    });
+cards.forEach(card => {
+
+card.addEventListener('mouseenter', () => {
+
+card.style.boxShadow =
+'0 10px 30px rgba(46,125,50,0.4)';
+
+});
+
+card.addEventListener('mouseleave', () => {
+
+card.style.boxShadow =
+'0 5px 20px rgba(0,0,0,0.1)';
+
+});
+
 });
