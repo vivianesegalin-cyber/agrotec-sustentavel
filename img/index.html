@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Do Campo à Mesa | Agrinho 2026</title>
+<title>Sustentabilidade no Campo</title>
 
 <link rel="stylesheet" href="css/style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 
 <header>
 
 <div class="logo">
-🌱 Agrinho 2026
+
+<img src="img/logo.png" alt="Logo">
+
+<h2>Sustentabilidade no Campo</h2>
+
 </div>
 
 <nav>
 
 <a href="#inicio">Início</a>
-
-<a href="#jornada">Jornada</a>
-
-<a href="#curiosidades">Curiosidades</a>
-
-<a href="#sobre">Sobre</a>
+<a href="#praticas">Práticas</a>
+<a href="#beneficios">Benefícios</a>
+<a href="#contato">Conclusão</a>
 
 </nav>
 
@@ -36,17 +41,17 @@
 
 <section id="inicio" class="hero">
 
-<div class="hero-content">
+<div class="overlay">
 
-<h1>Do Campo à Mesa</h1>
+<h1>Cultivando um Futuro Sustentável</h1>
 
 <p>
-Conheça a jornada dos alimentos desde a produção rural
-até chegar ao consumidor.
+Conheça práticas agrícolas que preservam o meio ambiente
+e garantem alimentos para as próximas gerações.
 </p>
 
-<a href="#jornada" class="btn">
-Explorar Jornada
+<a href="#praticas" class="btn">
+Explorar
 </a>
 
 </div>
@@ -55,144 +60,155 @@ Explorar Jornada
 
 <section class="introducao">
 
-<h2>O caminho do alimento</h2>
+<h2>Por que a sustentabilidade é importante?</h2>
 
 <p>
-Todos os dias consumimos alimentos que percorrem um longo caminho.
-Esse processo envolve agricultores, transportadores,
-comerciantes e consumidores.
+
+A sustentabilidade no campo busca equilibrar produção,
+preservação ambiental e qualidade de vida.
+Com práticas inteligentes, é possível produzir mais
+respeitando os recursos naturais.
+
 </p>
 
 </section>
 
-<section id="jornada">
+<section id="praticas">
 
-<h2 class="titulo">
-Etapas da Jornada
-</h2>
+<h2>Práticas Sustentáveis</h2>
 
 <div class="cards">
 
 <div class="card">
-<img src="img/producao.jpg">
-<h3>🌱 Produção Rural</h3>
+
+<img src="img/regenerativa.jpg" alt="Agricultura Regenerativa">
+
+<h3>🌱 Agricultura Regenerativa</h3>
+
 <p>
-Tudo começa no campo, onde agricultores cultivam
-frutas, verduras, legumes e grãos.
+Recupera a saúde do solo utilizando cobertura vegetal,
+rotação de culturas e redução do uso de químicos.
 </p>
+
+<button onclick="mostrarInfo('regenerativa')">
+Saiba Mais
+</button>
+
 </div>
 
 <div class="card">
-<img src="img/colheita.jpg">
-<h3>🚜 Colheita</h3>
+
+<img src="img/compostagem.jpg" alt="Compostagem">
+
+<h3>♻ Compostagem</h3>
+
 <p>
-Após o crescimento dos alimentos,
-é realizada a colheita e seleção.
+Transforma resíduos orgânicos em adubo natural,
+reduzindo desperdícios e melhorando o solo.
 </p>
+
+<button onclick="mostrarInfo('compostagem')">
+Saiba Mais
+</button>
+
 </div>
 
 <div class="card">
-<img src="img/transporte.jpg">
-<h3>🚚 Transporte</h3>
-<p>
-Os alimentos são transportados
-para centros de distribuição e mercados.
-</p>
-</div>
 
-<div class="card">
-<img src="img/mercado.jpg">
-<h3>🏪 Comercialização</h3>
-<p>
-Supermercados, feiras e mercearias
-recebem os produtos para venda.
-</p>
-</div>
+<img src="img/agua.jpg" alt="Uso da Água">
 
-<div class="card">
-<img src="img/consumidor.jpg">
-<h3>🍽 Consumidor</h3>
+<h3>💧 Uso Consciente da Água</h3>
+
 <p>
-O alimento finalmente chega à mesa
-das famílias.
+Sistemas de irrigação eficientes ajudam a economizar
+água e aumentar a produtividade.
 </p>
+
+<button onclick="mostrarInfo('agua')">
+Saiba Mais
+</button>
+
 </div>
 
 </div>
 
 </section>
 
-<section class="linha-tempo">
+<section id="beneficios">
 
-<h2>Da Fazenda à Mesa</h2>
+<h2>Benefícios</h2>
 
-<div class="timeline">
-
-<div>🌱 Plantio</div>
-
-<div>🚜 Colheita</div>
-
-<div>📦 Embalagem</div>
-
-<div>🚚 Transporte</div>
-
-<div>🏪 Mercado</div>
-
-<div>🍽 Consumo</div>
-
-</div>
-
-</section>
-
-<section id="curiosidades">
-
-<h2>Curiosidades</h2>
-
-<div class="curiosidades">
+<div class="beneficios">
 
 <div>
-<h3>70%</h3>
-<p>
-Da água doce utilizada no mundo
-está ligada à agricultura.
-</p>
+<h3>🌍 Meio Ambiente</h3>
+<p>Preservação dos recursos naturais.</p>
 </div>
 
 <div>
-<h3>1/3</h3>
-<p>
-Dos alimentos produzidos são desperdiçados.
-</p>
+<h3>🌾 Produção</h3>
+<p>Maior produtividade a longo prazo.</p>
 </div>
 
 <div>
-<h3>100%</h3>
-<p>
-Dependemos da agricultura para nossa alimentação.
-</p>
+<h3>👨‍🌾 Agricultores</h3>
+<p>Redução de custos e melhor qualidade de vida.</p>
+</div>
+
+<div>
+<h3>🍎 Consumidores</h3>
+<p>Alimentos mais saudáveis e sustentáveis.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="sobre">
+<section class="estatisticas">
 
-<h2>Mensagem Final</h2>
+<h2>Números da Sustentabilidade</h2>
+
+<div class="numeros">
+
+<div>
+<span class="contador" data-target="70">0</span>
+<p>% da água doce é utilizada pela agricultura.</p>
+</div>
+
+<div>
+<span class="contador" data-target="30">0</span>
+<p>% de aumento na retenção de água em solos regenerados.</p>
+</div>
+
+<div>
+<span class="contador" data-target="50">0</span>
+<p>% de redução de resíduos com compostagem.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contato">
+
+<h2>Conclusão</h2>
 
 <p>
-O campo e a cidade trabalham juntos para garantir
-alimentação de qualidade para toda a população.
-Valorizar os produtores rurais é reconhecer a importância
-de quem alimenta o mundo.
+
+Investir em sustentabilidade no campo significa proteger
+o planeta, fortalecer a agricultura e garantir alimentos
+para as futuras gerações.
+
 </p>
+
+<img src="img/campo.jpg" alt="Campo Sustentável">
 
 </section>
 
 <footer>
 
 <p>
-Projeto Agrinho 2026 • Do Campo à Mesa
+Projeto Agrinho 2026 • Sustentabilidade no Campo
 </p>
 
 </footer>
