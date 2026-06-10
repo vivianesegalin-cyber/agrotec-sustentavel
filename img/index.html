@@ -4,35 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgroTec Sustentável - Agrinho 2026</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
         <img src="img/logo-agrotec.png" alt="Logo AgroTec Sustentável" class="logo">
         <h1>AgroTec Sustentável</h1>
-        <p>Do Campo à Mesa: A Jornada dos Alimentos</p>
+        <nav>
+            <button onclick="scrollToSection('sobre')">Sobre</button>
+            <button onclick="scrollToSection('jornada')">Jornada</button>
+            <button onclick="scrollToSection('contato')">Contato</button>
+        </nav>
     </header>
 
+    <!-- Banner -->
     <section id="banner">
         <img src="img/banner.png" alt="Banner do Projeto">
     </section>
 
+    <!-- Sobre o Projeto -->
     <section id="sobre">
         <h2>Sobre o Projeto</h2>
         <p>O AgroTec Sustentável mostra o caminho dos alimentos desde a produção rural até o consumidor final, destacando tecnologia, sustentabilidade e consumo consciente.</p>
     </section>
 
+    <!-- Jornada do Alimento -->
     <section id="jornada">
         <h2>Etapas da Jornada do Alimento</h2>
         <div class="etapas">
             <div class="etapa">
-                <h3>Produção Rural</h3>
                 <img src="img/maquete-geral.png" alt="Produção Rural">
+                <h3>Produção Rural</h3>
                 <p>Plantio e cuidado com o solo e animais.</p>
             </div>
             <div class="etapa">
-                <h3>Colheita & Processamento</h3>
                 <img src="img/comedouro.png" alt="Colheita e Processamento">
+                <h3>Colheita & Processamento</h3>
                 <p>Colheita, seleção, embalagem e processamento dos alimentos.</p>
             </div>
             <div class="etapa">
@@ -46,6 +54,7 @@
         </div>
     </section>
 
+    <!-- Contato / Autor -->
     <section id="contato">
         <h2>Autor</h2>
         <p>Nome do estudante: ____________________</p>
@@ -54,10 +63,11 @@
         <p>Ano: 2026</p>
     </section>
 
+    <!-- Rodapé -->
     <footer>
         <p>Projeto Agrinho 2026 - <span class="agrinho">#agrinho</span></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
