@@ -1,19 +1,52 @@
-const cards = document.querySelectorAll('.card');
+function mostrarInfo(tipo){
 
-cards.forEach(card => {
+if(tipo === 'regenerativa'){
+alert(
+'A agricultura regenerativa melhora a saúde do solo, aumenta a biodiversidade e reduz a erosão.'
+);
+}
 
-card.addEventListener('mouseenter', () => {
+if(tipo === 'compostagem'){
+alert(
+'A compostagem transforma restos orgânicos em adubo rico em nutrientes.'
+);
+}
 
-card.style.boxShadow =
-'0 10px 30px rgba(46,125,50,0.4)';
+if(tipo === 'agua'){
+alert(
+'O uso eficiente da água reduz desperdícios e protege os recursos hídricos.'
+);
+}
 
-});
+}
 
-card.addEventListener('mouseleave', () => {
+const contadores = document.querySelectorAll('.contador');
 
-card.style.boxShadow =
-'0 5px 20px rgba(0,0,0,0.1)';
+contadores.forEach(contador => {
 
-});
+const atualizar = () => {
+
+const alvo = +contador.getAttribute('data-target');
+
+const atual = +contador.innerText;
+
+const incremento = alvo / 100;
+
+if(atual < alvo){
+
+contador.innerText =
+Math.ceil(atual + incremento);
+
+setTimeout(atualizar,20);
+
+}else{
+
+contador.innerText = alvo;
+
+}
+
+};
+
+atualizar();
 
 });
