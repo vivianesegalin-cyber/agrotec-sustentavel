@@ -1,17 +1,9 @@
-let atual = 0;
-
-const etapas =
-document.querySelectorAll(".etapa");
-
-function proximaEtapa(){
-
-etapas[atual].classList.remove("ativa");
-
-atual++;
-
-if(atual >= etapas.length){
-atual = 0;
-}
-
-etapas[atual].classList.add("ativa");
-}
+// Pequena interação para tornar o site dinâmico
+document.addEventListener("DOMContentLoaded", () => {
+    const etapas = document.querySelectorAll(".etapa");
+    etapas.forEach((etapa, index) => {
+        etapa.addEventListener("click", () => {
+            alert(`Você clicou na etapa: ${etapa.querySelector("h3").textContent}`);
+        });
+    });
+});
