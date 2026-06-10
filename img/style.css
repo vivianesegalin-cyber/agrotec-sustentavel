@@ -1,40 +1,64 @@
-body{
-font-family:Arial,sans-serif;
-background:#e8f5e9;
-margin:0;
-text-align:center;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5fff5;
+    color: #333;
 }
 
-header{
-background:#2e7d32;
-color:white;
-padding:20px;
+header {
+    background: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.container{
-padding:30px;
+header .logo {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px;
 }
 
-.etapa{
-display:none;
-background:white;
-padding:20px;
-border-radius:10px;
-max-width:600px;
-margin:auto;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+h1 {
+    margin: 0;
 }
 
-.ativa{
-display:block;
+section {
+    padding: 40px 20px;
+    text-align: center;
 }
 
-button{
-margin-top:20px;
-padding:12px 25px;
-background:#43a047;
-color:white;
-border:none;
-border-radius:6px;
-cursor:pointer;
+section#banner img {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.etapas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.etapa {
+    background: #dcedc8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+}
+
+.etapa img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .agrinho {
+    font-weight: bold;
 }
