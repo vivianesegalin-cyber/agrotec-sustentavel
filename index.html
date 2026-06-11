@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTec Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Menu -->
+    <header>
+        <img src="img/logo-agrotec.png" alt="Logo AgroTec" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <img src="img/banner.png" alt="Banner AgroTec">
+        <h1>AgroTec Sustentável</h1>
+        <p>Agro forte, futuro sustentável!</p>
+    </section>
+
+    <!-- Sobre o projeto -->
+    <section id="sobre">
+        <h2>Sobre o Projeto</h2>
+        <p>O AgroTec Sustentável é uma iniciativa do Agrinho 2026 que busca soluções tecnológicas e sustentáveis para a agropecuária, promovendo o bem-estar animal e preservando o meio ambiente.</p>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria">
+        <h2>Galeria de Imagens</h2>
+        <div class="imagens">
+            <img src="img/comedouro.png" alt="Comedouro Inteligente">
+            <img src="img/maquete-geral.png" alt="Maquete Geral">
+        </div>
+    </section>
+
+    <!-- Simulador -->
+    <section id="simulador">
+        <h2>Simulador de Ração</h2>
+        <p>Calcule a quantidade ideal de ração para seu rebanho:</p>
+        <label for="quantidade">Número de animais:</label>
+        <input type="number" id="quantidade" min="1" value="1">
+        <label for="dias">Dias de alimentação:</label>
+        <input type="number" id="dias" min="1" value="7">
+        <button onclick="calcularRacao()">Calcular</button>
+        <p id="resultado"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AgroTec Sustentável - Projeto Agrinho</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
